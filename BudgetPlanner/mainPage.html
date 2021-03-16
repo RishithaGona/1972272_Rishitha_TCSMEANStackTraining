@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      
+
+    }
+    .cards{
+      margin-left: 32%;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 10;
+      color:black;
+      margin-right: 300px;
+      margin-left: 2px;
+      margin-top: 70px;
+      float: left;
+      list-style:shadow;
+      margin-left: 300px; 
+
+
+    }
+    .card2{
+      
+      margin-left: 32%;
+      font-style: italic;
+      font-size: 15px;
+      font-weight: 10;
+      color:black;
+      margin-top: -116px;
+      
+      float: right;
+      list-style:shadow;
+      margin-left: 200px; 
+      margin-right: 400px;
+
+
+    }
+   /*.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  align-self: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(165, 241, 246);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #7dbfeb;
+  color: white;
+  transform: rotateY(180deg);
+}
+*/
+   
+  </style>
+</head>
+<body>
+  <div style="background-color: aquamarine ;height:80px">
+    <h2 style="color: rgb(0, 0, 0)" >BUDGET PLANNER </h2>
+  </div>
+  <!-- <div class="bottn" style="background-color:#d2d2e6e0 ">
+    
+    <input type = "button" onclick = "resetBudget()" value = "New Budget">  
+    
+ </div> > -->
+  
+  <div class="cards" id="cards">
+    <div class="flip-card" >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        
+        <!-- <h2>Program Manager</h2> -->
+
+
+      </div>
+      <div class="flip-card-back" >
+        <h1 id="target ">Manager Portal</h1><br>
+        <button><a href="programManager.html">Click to enter to Program Manager</a></button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="card2" id="card2">
+    <div class="flip-card" >
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          
+          <!--<h2>Finance Teams</h2>-->
+    
+        </div>
+      
+
+        <div class="flip-card-back">
+          <h1>Finance Portal</h1><br>
+         
+          <button><a href="financeTeams.html">Click to enter to Finance Teams</a></button>
+          
+          
+          
+        </div>
+        </div>
+    </div>
+      
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

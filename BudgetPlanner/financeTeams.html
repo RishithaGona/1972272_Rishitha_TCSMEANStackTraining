@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner Finance</title>
+    <style>
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(165, 241, 246);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #83c5f1;
+  color: white;
+  transform: rotateY(180deg);
+}
+      
+h2 {text-align: center; font-family:Georgia, 'Times New Roman', Times, serif;}
+      body {font-family:Georgia, 'Times New Roman', Times, serif; }
+      
+      
+.bottn{
+        text-align: center;
+      }
+.myTable{
+        margin-left:350px ;
+        text-align: center;
+      }
+      
+      </style>
+</head>
+<body>
+    
+    
+   
+    <div style="background-color: aquamarine ;height:80px">
+        <h2 style="color: rgb(0, 0, 0)" >BUDGET PLANNER </h2>
+    </div>
+    
+    
+    <div class="bottn" style="background-color:plum;height:30px">
+       <a href="mainPage.html"> <button   style="background-color:#a1b5c0e0">HOME</button></a>
+       <input type = "button" onclick = "showBudget()" value = "Display">  
+       
+    </div>
+    
+    <div class="myTable" >
+        
+      <table id="budgetTable" >
+        <thead >
+          <tr style="background-color:rgba(241, 240, 240, 0.86)">
+            <th style="width: 150px;">Client Name</th>
+            <th style="width: 250px;">Project Name</th>
+            <th style="width: 120px">Budget</th>
+            
+            
+          </tr>
+
+  
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+   
+    
+        
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      
+      <h2>TOTAL Budget</h2>
+
+    </div>
+    <div class="flip-card-back">
+      <h1 id="target ">Total Budget</h1><br>
+      <h2 class="amount">$ <span id="budgetTotal">0</span></h2>
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+        
+<script  src="main.js"></script>
+      </body>
+</html>
