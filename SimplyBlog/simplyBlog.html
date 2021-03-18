@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>MY BLOG</title>
+    <style>
+
+      p{
+          text-align: center;
+          
+      }
+      body {font-family:Georgia, 'Times New Roman', Times, serif; text-align: center;background-image: url(cloud.jpg);}
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        
+        background-color: rgb(207, 192, 192);
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #ebcfcf;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .bottn{
+        text-align: center;
+      }
+      .myTable{
+        margin-left:350px ;
+        text-align: center;
+      }
+      .allBlogs{
+          margin-left: 20%;
+          background-position: center;
+          background-size:cover;
+      }
+      
+      </style>
+</head>
+<body>
+    <div class="nav justify-content-left">
+
+        <button type="button" class="btn btn-outline-primary">About Us</button>
+        <button type="button" class="btn btn-outline-warning">Contact Us</button>
+        <button type="button" class="btn btn-outline-success">Login</button>
+        <button type="button" class="btn btn-outline-danger">Back</button>
+    </div>  
+    <br>
+    <br>
+    <div>
+          <h2 style="color: rgb(116, 6, 88) ;text-align:center;margin-bottom: 0px;margin-top: -25px; height: auto;font-weight: 700;font-style: italic;" >WELCOME TO MY BLOG
+      </div>
+    <br>
+    <br>
+      <div data-toggle="modal" data-target="#exampleModal" class="bottn">
+        <button  id="myButton" style=" background-color:rgb(76, 207, 207);
+        border-radius:0fr;
+        text-decoration: none;
+        font-size: 20px;
+        font-style: italic;
+        color:black;
+        padding: 20px 20px;
+        margin: 1px 1px;
+        cursor: pointer;"> ADD BLOG&emsp;</button>
+   
+    <div  id="myModal" class="modal">
+  
+        <div class="modal-content">
+
+            <div class="modal-header">
+              
+              <span class="closeModal">&times;</span>
+              
+              <h3> Add BLOG</h3>
+              
+            </div>
+            
+            <div class="modal-body">
+              <table style="padding: 28px 50px">
+                <tr>
+                  <td style="width:150px;color: black;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">TITLE:</td>
+                  <td><input type="text"  id="blogName" style="width: -webkit-fill-available"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;color: black;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">
+                    DESCRIPTION:
+                  </td>
+                  <td>
+                    <textarea  id="blogContent" cols="60" rows="10"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                    <td style="width:150px;color: black;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;">IMAGE:</td>
+                    <td><input type="file" id="image" style="width: -webkit-fill-available"></td>
+                  </tr>
+              </table>
+            </div>
+      
+            <div class="modal-footer">
+              <button type="submit" value="submit" style="float: right;" onclick="addBlog()" >SUBMIT</button>
+              
+
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div id="accordion"> 
+      </div>
+        <div class = "allBlogs" id="allBlogs" > </div>
+        <script src="simplyBlog.js"> </script>
+      </body>
+</html>
