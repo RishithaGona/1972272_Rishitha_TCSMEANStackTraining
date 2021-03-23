@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .mb-0{
+            
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            font: size 50px;
+            margin-bottom: 10px;
+            margin-top: -50px;
+             
+        }
+       
+    </style>
+</head>
+<body>
+    <div> <header>
+        <h2 style="color: blue ;text-align:center;margin-bottom: 10px;margin-top: 25px; height: auto;font-weight: 700;font-family: cursive;" >SHOPPING CART
+        </header>
+    </div>
+  <br>
+    <!--Main Navigation-->
+  </body>
+  <!--Section: Block Content-->
+<section>
+
+    <!--Grid row-->
+    <div class="row">
+  
+      <!--Grid column-->
+      <div class="col-lg-8">
+  
+        <!-- Card -->
+        <div class="card wish-list mb-3">
+          <div class="card-body">
+  
+            <h5 class="mb-4">Cart (<span>3</span> items)</h5>
+  
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img class="img-fluid w-100"
+                    src="lipstick.jpg" alt="Sample">
+                  
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5>Mac Lipstick</h5>
+                      <p class="mb-3 text-muted text-uppercase small">Lipstick</p>
+                      <p class="mb-2 text-muted text-uppercase small">Color: Red</p>
+                      <p class="mb-3 text-muted text-uppercase small">Size: 0.10 oz</p>
+                    </div>
+                    
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="addToCart(Mac_Lipstick)">
+                            Add to Cart
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="removeFromCart(Mac_Lipstick)">
+                            Remove From Cart
+                        </button>
+                    </div>
+                    <p class="mb-0"><span><strong>$25.99</strong></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img class="img-fluid w-100"
+                    src="mascara.jpg"Sample">
+                  
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5>Maybelline Mascara</h5>
+                      <p class="mb-3 text-muted text-uppercase small">Mascara</p>
+                      <p class="mb-2 text-muted text-uppercase small">Color: Purple</p>
+                      <p class="mb-3 text-muted text-uppercase small">Size: M</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="addToCart(Maybelline_Mascara)">
+                            Add to Cart
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="removeFromCart(Maybelline_Mascara)">
+                            Remove From Cart
+                        </button>
+                    </div>
+                    <p class="mb-0"><span><strong>$10</strong></span></p>
+                  </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div><hr class="mb-4">
+
+            <div class="row mb-4">
+              <div class="col-md-5 col-lg-3 col-xl-3">
+                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                  <img class="img-fluid w-100"
+                    src="Eyeshadow-Palette.jpg"Sample">
+                  
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-9 col-xl-9">
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5>HudaBeauty Eyeshadow-Palette</h5>
+                      <p class="mb-3 text-muted text-uppercase small">Eyeshadow-Palette</p>
+                      <p class="mb-2 text-muted text-uppercase small">Color: Nude</p>
+                      <p class="mb-3 text-muted text-uppercase small">Size: S</p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="addToCart(Eyeshadow_Palette)">
+                            Add to Cart
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="removeFromCart(Eyeshadow_Palette)">
+                            Remove From Cart
+                        </button>
+                    </div>
+                    <p class="mb-0"><span><strong>$35.25</strong></span></p>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto"">
+            <button type="button" class="btn btn-primary btn-lg"">CHECKOUT</button>
+        </div>
+        <br>
+       
+      <div class="col-lg-4">
+  
+        <!-- Card -->
+        <div class="card mb-3" >
+          <div class="card-body">
+  
+            <h5 class="mb-3">Your total</h5>
+               
+                <a id ="contents"></a>
+  
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                Total amount
+                <a id ="totalAmount"></a>
+              </li> 
+              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                Shipping
+                <span>$10</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                <div>
+                  <strong>TOTAL</strong>
+                  <strong>
+                    <p class="mb-0">(including tax)</p>
+                  </strong>
+                </div>
+                <a id ="totalAmountFinal"></a>
+              </li>
+            </ul>
+  
+            <!--<button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to checkout</button>-->
+  
+          </div>
+        </div>
+        
+  
+      </div>
+      
+  
+  </section>
+  <!--Section: Block Content-->
+  <script src="cart.js"></script>
+</html>
