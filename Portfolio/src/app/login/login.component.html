@@ -1,0 +1,17 @@
+<div>
+    <br/>
+    <h2>Login page </h2>
+    <form  #userRef="ngForm" (ngSubmit) = "verifyUser(userRef.value)">
+        <label> USERNAME</label>
+        <input type="text" name="user"ngModel/><br/>
+        <label >Password</label>
+        <input type="password" name="pass"ngModel/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+        {{msg}}
+
+
+    </form>
+
+
+</div>
