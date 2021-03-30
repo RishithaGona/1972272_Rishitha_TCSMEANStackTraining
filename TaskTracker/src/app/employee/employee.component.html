@@ -1,0 +1,47 @@
+<div>
+    <h2 style="font-style: italic;color:blue; font-size: 30px;font-weight: 550;">To-do Task</h2>
+    <form #empRef="ngForm" (ngSubmit)="storeUser(empRef.value)">
+        <mat-form-field>
+            <mat-label>ID</mat-label>
+            <input matInput type="text" name="id" ngModel/>
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" ngModel/>
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <input matInput type="text" name="task" ngModel/>
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>Date</mat-label>
+            <input matInput type="date" name="date" ngModel/>
+        </mat-form-field>
+        &nbsp;
+        <button mat-stroked-button color="primary" style="background-color: rgb(111, 111, 236);" type="submit">Submit
+
+        </button>
+    </form>
+</div>
+<div>
+    <br/>
+    <h2 style="font-style: italic;color:blue; font-size: 30px;font-weight: 550;">To-do-List</h2>
+    <br/>
+    <table border="4" style="background-color:rgb(25, 150, 25); margin-left: 20%;">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Deadline</th>
+        </tr>
+        <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.task}}</td>
+                <td>{{emp.date}}</td>
+        </tr>
+    </table>
+</div>
