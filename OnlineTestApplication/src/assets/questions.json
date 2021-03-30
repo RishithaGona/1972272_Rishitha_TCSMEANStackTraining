@@ -1,0 +1,22 @@
+[
+    {"id":1,"question":"What festival is celebrated by Christians as the birth of Jesus Christ?",
+        "option1":"Holi","option2":"Christmas","option3":"Dussera","option4":"Diwali","correctoption":"Christmas"},
+    {"id":2,"question":"Who was the first Indian in space?",
+        "option1":"Vikram Ambalal","option2":"Ravish Malhotra","option3":"Rakesh Sharma","option4":"Nagapathi Bhat","correctoption":"Rakesh Sharma"},
+    {"id":3,"question":"India's largest city by population is?",
+            "option1":"Telangana","option2":"Kerala","option3":"Delhi","option4":"Mumbai","correctoption":"Mumbai"},
+    {"id":4,"question":"Which state is called India's Spice Garden?",
+            "option1":"Tamil Nadu","option2":" Assam","option3":"Telangana","option4":"Kerala","correctoption":"Shah Jahan"},
+    {"id":5,"question":"Who wrote the Indian National Anthem?",
+            "option1":"Bakim Chandra Chatterji","option2":"Rabindranath Tagore","option3":"Swami Vivekanand","option4":"None of the above","correctoption":"Rabindranath Tagore"},
+    {"id":6,"question":"Who was the first Indian Scientist to win a Nobel Prize?",
+            "option1":"CV Raman","option2":"Amartya Sen","option3":"Hargobind Khorana","option4":"Hargobind Khorana","correctoption":"CV Raman"},
+    {"id":7,"question":"Who is known as Metro Man in India?",
+            "option1":"E Shreedharan","option2":"Ratan Tata","option3":"C Rangarajan","option4":"Hargobind Khorana","correctoption":"E Shreedharan"},
+    {"id":8,"question":" Who was the first Indian woman to win the Miss World Title?",
+            "option1":"Aishwarya Rai","option2":"Sushmita Sen","option3":"Reita Faria","option4":"Diya Mirza","correctoption":"Reita Faria"},
+    {"id":9,"question":" Who was the first President of India?",
+            "option1":"Abdul Kalam","option2":"Lal Bahadur Shastri","option3":"Dr. Rajendra Prasad","option4":"Zakir Hussain","correctoption":"Dr. Rajendra Prasad"},
+    {"id":10,"question":"Who was the first Indian to win the Booker Prize?",
+            "option1":"Dhan Gopal Mukerji","option2":"Nirad Chaudhuri","option3":"Arundhati Roy","option4":"Aravind Adiga","correctoption":"Arundhati Roy"}
+]
